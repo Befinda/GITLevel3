@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #222;
+    color: white;
+    padding: 19px 0;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo {
+    background-color: #F1E4E6;
+
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.footer {
+    background-color: #222224;
+    color: white;
+}
