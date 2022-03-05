@@ -24,15 +24,36 @@ body {
 .header-wrap {
     display: flex;
     justify-content: space-between;
+
 }
+
+
 
 .promo {
     background-color: #F1E4E6;
 
 }
 
+.promo-wrap {
+    background-image: url("../img/promo.png");
+    background-position-x: -226px;
+    background-repeat: no-repeat;
+    height: 764px;
+}
+
 .content {
     flex-grow: 1;
+}
+
+.offer {
+    padding: 65px 0 96px;
+
+}
+
+
+
+.feature {
+    background-color: #222224;
 }
 
 .footer {
