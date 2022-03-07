@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
 
 .wrap {
@@ -25,8 +26,14 @@ body {
     display: flex;
     justify-content: space-between;
 
+
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
 
 
 .promo {
@@ -47,16 +54,68 @@ body {
 
 .offer {
     padding: 65px 0 96px;
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+.products_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 .feature {
     background-color: #222224;
+    padding: 103px 0;
+}
+
+.feature-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.feedback {
+    height: 448px;
+    background-image: url("../img/subscribe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feedback-wrap {
+    padding: 100px 0 156px;
 }
 
 .footer {
     background-color: #222224;
     color: white;
+}
+
+.footer-wrap {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    column-gap: 10px;
+}
+
+.icons_item {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
