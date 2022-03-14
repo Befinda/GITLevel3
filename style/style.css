@@ -26,8 +26,16 @@ body {
 .header-wrap {
     display: flex;
     justify-content: space-between;
+}
 
+.header-link {
+    text-decoration: none;
+    color: transparent;
+}
 
+.header-btn {
+    background-color: transparent;
+    border: none;
 }
 
 .header-right {
@@ -44,16 +52,17 @@ body {
 
 .promo {
     background-color: #F1E4E6;
-
 }
 
-h1 {
+.promo-title {
     float: right;
     color: #222;
     font-size: 32px;
     font-weight: 700;
     line-height: 38, 4px;
-
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin-right: 100px;
 }
 
 .red {
@@ -68,8 +77,12 @@ h1 {
 .promo-wrap {
     background-image: url("../img/promo.png");
     background-position-x: -226px;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     height: 764px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .content {
@@ -95,6 +108,7 @@ h1 {
     text-align: center;
     color: #FFFFFF;
     padding: 105px 0;
+    background-color: #5D5D5D;
 }
 
 .of_women {
