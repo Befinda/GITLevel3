@@ -17,6 +17,13 @@ body {
     margin: 0 auto;
 }
 
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+}
+
 .header {
     background-color: #222;
     color: white;
@@ -272,12 +279,13 @@ body {
 
 .sb-title {
     font-size: 24px;
-    padding-bottom: 16px;
+    padding-bottom: 32px;
+
 }
 
 .sb-text {
     font-size: 18px;
-    padding-bottom: 32px;
+    font-weight: 400;
 }
 
 .sb-input {
