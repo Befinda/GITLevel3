@@ -337,13 +337,29 @@ body {
 .icons {
     display: flex;
     column-gap: 10px;
+
 }
 
 .icons_item {
+
+    background-color: #fff;
+    list-style-type: none;
+
+
+}
+
+.icons_link {
+    text-decoration: none;
+    color: #222;
     width: 32px;
     height: 32px;
-    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+}
+
+.icons_link:hover {
+    color: #fff;
+    background-color: #F16D7F;
 }
