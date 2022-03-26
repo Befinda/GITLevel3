@@ -53,6 +53,7 @@ body {
 .header-btn {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .header-right {
@@ -394,3 +395,59 @@ body {
     color: #fff;
     background-color: #F16D7F;
 }
+
+.caption {
+    background-color: #F8F3F4;
+}
+
+.caption-wrap {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caption-head {
+    color: #F16D7F;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.bdc-item::before {
+    content: '/';
+    margin-right: 10px;
+}
+
+.bdc-item:first-child::before {
+    display: none;
+}
+
+.bdc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.bdc-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    /*transition: 0.2s;*/
+
+}
+
+.bdc-link--current {
+    font-weight: bold;
+    color: #F16D7F;
+    cursor: default;
+}
+.bdc-link[href]:hover {
+    text-decoration: underline;
+    color: #F16D7F;
+  }
