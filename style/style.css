@@ -40,11 +40,13 @@ body {
     color: transparent;
 }
 
-.header-link svg, .header-btn svg {
+.header-link svg,
+.header-btn svg {
     fill: #E8E8E8;
 }
 
-.header-link svg:hover, .header-btn svg:hover {
+.header-link svg:hover,
+.header-btn svg:hover {
     fill: #F16D7F;
 }
 
@@ -244,18 +246,29 @@ body {
 }
 
 .feature_item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 65px;
+    background-repeat: no-repeat;
+    background-position-x: center;
 
+}
+
+.item_deliv {
+    background-image: url("../img/feature1.svg");
+}
+
+.item_sales {
+    background-image: url("../img/feature2.svg");
+}
+
+.item_qual {
+    background-image: url("../img/feature3.svg");
 }
 
 .feat-head {
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
-    margin: 24px 0 20px;
+    margin-bottom: 20px;
 }
 
 .subscribe {
