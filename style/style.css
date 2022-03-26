@@ -40,6 +40,14 @@ body {
     color: transparent;
 }
 
+.header-link svg, .header-btn svg {
+    fill: #E8E8E8;
+}
+
+.header-link svg:hover, .header-btn svg:hover {
+    fill: #F16D7F;
+}
+
 .header-btn {
     background-color: transparent;
     border: none;
@@ -213,6 +221,12 @@ body {
     margin: 48px auto 95px;
 }
 
+.but_cat:hover {
+    color: #fff;
+    background-color: #F16D7F;
+
+}
+
 .feature {
     background-color: #222224;
     padding: 103px 0;
@@ -314,6 +328,10 @@ body {
     width: 100px;
     height: 49px;
     border-radius: 0 25px 25px 0;
+}
+
+.sb-btn:hover {
+    background-color: #E05C6E;
 }
 
 .footer {
