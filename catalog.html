@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/4c74d4fdd7.js" crossorigin="anonymous"></script>
     <title>Catalog</title>
 </head>
@@ -63,7 +64,21 @@
     </section>
     <main class="content">
         <div class="wrap">
-            <section class="products">
+            <section class="products-cat">
+                <div class="prod-filter">
+                    <div class="prod-filter-item filter"> <span>FILTER</span>
+                        <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="prod-filter-item sort">
+                        <span>TRENDING NOW</span><i class="fa-solid fa-angle-down"></i>
+                        <span>SIZE</span><i class="fa-solid fa-angle-down"></i>
+                        <span>PRICE</span><i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
                 <div class="products_catalog">
                     <article class="products_item">
                         <img src="img/product1.jpg" alt="">
@@ -75,7 +90,7 @@
                             <p class="price">$52.00</p>
                         </div>
                     </article>
-                    <article class="products_item"><img src="img/product2.jpg" alt="">
+                    <article class="products_item"><img src="img/product7.jpg" alt="">
                         <div class="prod-text-wrap">
                             <h3 class="head_item">ELLERY X M'O CAPSULE</h3>
                             <p class="des_item">Known for her sculptural takes on traditional tailoring, Australian
@@ -102,7 +117,7 @@
                             <p class="price">$52.00</p>
                         </div>
                     </article>
-                    <article class="products_item"><img src="img/product5.jpg" alt="">
+                    <article class="products_item"><img src="img/product8.jpg" alt="">
                         <div class="prod-text-wrap">
                             <h3 class="head_item">ELLERY X M'O CAPSULE</h3>
                             <p class="des_item">Known for her sculptural takes on traditional tailoring, Australian
@@ -112,7 +127,37 @@
                         </div>
                     </article>
                     <article class="products_item">
-                        <img src="img/product6.jpg" alt="">
+                        <img src="img/product9.jpg" alt="">
+                        <div class="prod-text-wrap">
+                            <h3 class="head_item">ELLERY X M'O CAPSULE</h3>
+                            <p class="des_item">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter
+                                of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="price">$52.00</p>
+                        </div>
+                    </article>
+                    <article class="products_item">
+                        <img src="img/product10.jpg" alt="">
+                        <div class="prod-text-wrap">
+                            <h3 class="head_item">ELLERY X M'O CAPSULE</h3>
+                            <p class="des_item">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter
+                                of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="price">$52.00</p>
+                        </div>
+                    </article>
+                    <article class="products_item">
+                        <img src="img/product11.jpg" alt="">
+                        <div class="prod-text-wrap">
+                            <h3 class="head_item">ELLERY X M'O CAPSULE</h3>
+                            <p class="des_item">Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter
+                                of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <p class="price">$52.00</p>
+                        </div>
+                    </article>
+                    <article class="products_item">
+                        <img src="img/product12.jpg" alt="">
                         <div class="prod-text-wrap">
                             <h3 class="head_item">ELLERY X M'O CAPSULE</h3>
                             <p class="des_item">Known for her sculptural takes on traditional tailoring, Australian
@@ -122,6 +167,17 @@
                         </div>
                     </article>
                 </div>
+
+                <ol class="pagination">
+                    <li><i class="fa-solid fa-angle-left"></i></li>
+                    <li class="pag-count first-count"><a class="first-count" href="#"></a></li>
+                    <li class="pag-count"><a href="#"></a></li>
+                    <li class="pag-count"><a href="#"></a></li>
+                    <li class="pag-count"><a href="#"></a></li>
+                    <li class="pag-count"><a href="#"></a></li>
+                    <li class="pag-count"><a class="cursor-def">.....20</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i></li>
+                </ol>
             </section>
         </div>
     </main>

@@ -447,7 +447,90 @@ body {
     color: #F16D7F;
     cursor: default;
 }
+
 .bdc-link[href]:hover {
     text-decoration: underline;
     color: #F16D7F;
-  }
+}
+
+.products-cat {
+    margin-top: 51px;
+    margin-bottom: 96px;
+}
+
+.prod-filter {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 30px;
+    padding-bottom: 64px;
+}
+
+.prod-filter-item {
+    width: 360px;
+}
+
+.filter {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+    padding-left: 16px;
+}
+
+.filter span {
+    padding-right: 11px;
+}
+
+.sort {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6F6E6E;
+}
+
+.sort span {
+    padding-right: 10px;
+}
+
+.sort i {
+    padding-right: 28px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 284px;
+    height: 44px;
+    margin: 48px auto;
+    counter-reset: pagcount;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    list-style: none;
+}
+
+
+
+.pag-count {
+    counter-increment: pagcount;
+}
+
+
+
+.pag-count a {
+    color: #C4C4C4;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.first-count a {
+    color: #EF5B70;
+}
+
+
+.pag-count a::before {
+    content: counter(pagcount);
+}
+
+.cursor-def {
+    cursor: default;
+}
