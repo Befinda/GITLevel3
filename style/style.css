@@ -625,27 +625,42 @@ body {
   list-style: none;
 }
 
-.pag-count {
-  counter-increment: pagcount;
-}
-
-.pag-count a {
+.pagination-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
   color: #C4C4C4;
   text-decoration: none;
   font-size: 16px;
   font-weight: 300;
 }
 
-.first-count a {
+.pagination-btn i {
+  color: #000;
+}
+
+.pagination-btn:hover {
   color: #EF5B70;
 }
 
-.pag-count a::before {
+.pag-count {
+  counter-increment: pagcount;
+}
+
+.first-count .pagination-btn {
+  color: #EF5B70;
+}
+
+.pag-count .pagination-btn::before {
   content: counter(pagcount);
 }
 
 .cursor-def {
   cursor: default;
+}
+
+.cursor-def:hover {
+  color: #C4C4C4;
 }
 
 /*стили страницы продукт*/
@@ -738,5 +753,43 @@ body {
   color: #EF5B70;
   font-size: 24px;
   padding-bottom: 65px;
+}
+
+.product-descript-ctrl {
+  padding-top: 65px;
+}
+
+.but_prod {
+  padding: 15px 57px 15px 73px;
+  background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
+  background-position-x: 25px;
+  background-position-y: center;
+}
+
+.wrap-ctrl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 23px;
+          column-gap: 23px;
+  font-size: 14px;
+  padding-bottom: 48px;
+}
+
+.wrap-ctrl button {
+  border: none;
+  background-color: transparent;
+  color: #6F6E6E;
+}
+
+.wrap-ctrl i {
+  padding-left: 9px;
 }
 /*# sourceMappingURL=style.css.map */
