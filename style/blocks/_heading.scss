@@ -1,0 +1,41 @@
+.header {
+    background-color: #222;
+    color: white;
+    padding: 19px 0;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-right {
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+    }
+
+    &-left {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    &-link {
+        text-decoration: none;
+        color: transparent;
+    }
+
+    &-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    svg {
+        fill: #E8E8E8;
+    }
+
+    svg:hover {
+        fill: $color_accent;
+    }
+}
