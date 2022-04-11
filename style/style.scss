@@ -388,7 +388,7 @@ body {
     font-size: $size_text;
     line-height: $size_text+3px;
     color: #636363;
-    /*transition: 0.2s;*/
+    transition: all 0.4s ease;
 
 }
 
@@ -420,28 +420,61 @@ body {
 }
 
 .filter {
-    font-weight: 600;
-    font-size: $size_text;
-    color: #000000;
     padding-left: 16px;
 
-    span {
-        padding-right: 11px;
+    button {
+        border: none;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: $size_text;
+        color: #000000;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        transition: all 400ms ease;
+
+        &:hover {
+            color: #EF5B70;
+
+            svg {
+                fill: #EF5B70;
+            }
+        }
+
+        svg {
+            margin-left: 11px;
+            transition: all 400ms ease;
+        }
     }
 }
 
 .sort {
     font-weight: 400;
     font-size: $size_text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 28px;
     color: #6F6E6E;
-}
 
-.sort span {
-    padding-right: 10px;
-}
+    button {
+        border: none;
+        background-color: transparent;
+        color: #6F6E6E;
+        cursor: pointer;
+        transition: all 400ms ease;
 
-.sort i {
-    padding-right: 28px;
+        &:hover i {
+            transform: rotate(90deg) translateX(-9px) scale(1.5);
+        }
+    }
+
+    i {
+        padding-left: 10px;
+    }
+
+
 }
 
 .pagination {
@@ -464,14 +497,19 @@ body {
         text-decoration: none;
         font-size: $size_text+2px;
         font-weight: 300;
+        transition: all 400ms ease;
 
         i {
             color: #000;
         }
 
-        &:hover {
+        &:not(.cursor-def):hover {
             color: #EF5B70;
+            transform: scale(1.5);
+            text-shadow: 2px 2px 2px #9F9F9F;
         }
+
+
     }
 }
 
@@ -492,10 +530,6 @@ body {
 
 .cursor-def {
     cursor: default;
-
-    &:hover {
-        color: #C4C4C4;
-    }
 }
 
 /*стили страницы продукт*/
@@ -523,6 +557,7 @@ body {
             background-color: rgba(42, 42, 42, 0.15);
             border: none;
             cursor: pointer;
+            transition: all 400ms ease;
 
             &:hover {
                 color: $color_accent;
