@@ -90,6 +90,11 @@ body {
         color: #FFFFFF;
         padding: 105px 0;
         background-color: #5D5D5D;
+        transition: font-size 400ms ease;
+
+        &:hover span {
+            font-size: 44px;
+        }
     }
 
     .women {
@@ -161,11 +166,18 @@ body {
     &_head {
         font-size: 13px;
         line-height: 16px;
+        transition: all 400ms ease;
 
         a {
             text-decoration: none;
             color: #000;
         }
+
+        &:hover a {
+            color: $color_accent;
+            text-shadow: 3px 5px 4px #9f9f9f;
+        }
+
     }
 
     &_des {
@@ -189,11 +201,15 @@ body {
     border: 1px solid #FF6A6A;
     font-size: $size_text+2px;
     padding: 16px 32px;
+    display: inline-block;
+    transition: all 400ms ease;
 
     &:hover {
         color: #fff;
         background-color: $color_accent;
-
+        transform: scale(1.25);
+        box-shadow: 2px 2px 4px #9F9F9F;
+        border-radius: 10px;
     }
 }
 
@@ -316,65 +332,18 @@ body {
         width: 100px;
         height: 49px;
         border-radius: 0 25px 25px 0;
+        transition: all 400ms ease;
 
         &:hover {
             background-color: #E05C6E;
+            transform: scale(1.1);
         }
     }
 }
 
 /*подвал страницы*/
-.footer {
-    background-color: #222224;
+@import "blocks/footer";
 
-
-
-    &-wrap {
-        padding: 24px 0;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.copyriht {
-    align-self: center;
-    color: #FBFBFB;
-    font-size: $size_text+2px;
-    line-height: $size_text+5px;
-}
-
-.icons {
-    display: flex;
-    column-gap: 10px;
-
-
-
-    &_item {
-
-        background-color: #fff;
-        list-style-type: none;
-
-
-    }
-
-    &_link {
-        text-decoration: none;
-        color: #222;
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: $size_text+2px;
-
-        &:hover {
-            color: #fff;
-            background-color: $color_accent;
-        }
-    }
-
-
-}
 
 /*стили страницы каталог*/
 .caption {
@@ -631,13 +600,21 @@ body {
     align-items: center;
     justify-content: space-between;
     column-gap: 23px;
+    transition: all 400ms ease;
 
     svg {
         fill: #F26376;
     }
 
-    &:hover svg {
-        fill: #fff;
+    &:hover {
+        span {
+            visibility: hidden;
+        }
+
+        svg {
+            fill: #fff;
+            animation: cart 2s infinite normal;
+        }
     }
 }
 
@@ -653,9 +630,25 @@ body {
         border: none;
         background-color: transparent;
         color: #6F6E6E;
+        cursor: pointer;
+        transition: all 400ms ease;
+
+        &:hover i {
+            transform: rotate(90deg) translateX(-9px) scale(1.5);
+        }
     }
 
     i {
         padding-left: 9px;
+    }
+}
+
+@keyframes cart {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(120px);
     }
 }

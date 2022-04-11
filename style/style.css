@@ -88,10 +88,22 @@ body {
 
 .header svg {
   fill: #E8E8E8;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .header svg:hover {
   fill: #F16D7F;
+}
+
+.logo {
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.logo:hover {
+  -webkit-transform: rotate(360deg) scale(1.2);
+          transform: rotate(360deg) scale(1.2);
 }
 
 /*обложка*/
@@ -165,6 +177,12 @@ body {
   color: #FFFFFF;
   padding: 105px 0;
   background-color: #5D5D5D;
+  -webkit-transition: font-size 400ms ease;
+  transition: font-size 400ms ease;
+}
+
+.offer_item:hover span {
+  font-size: 44px;
 }
 
 .offer .women {
@@ -247,11 +265,18 @@ body {
 .item_head {
   font-size: 13px;
   line-height: 16px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .item_head a {
   text-decoration: none;
   color: #000;
+}
+
+.item_head:hover a {
+  color: #F16D7F;
+  text-shadow: 3px 5px 4px #9f9f9f;
 }
 
 .item_des {
@@ -274,11 +299,19 @@ body {
   border: 1px solid #FF6A6A;
   font-size: 16px;
   padding: 16px 32px;
+  display: inline-block;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .but_cat:hover {
   color: #fff;
   background-color: #F16D7F;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-box-shadow: 2px 2px 4px #9F9F9F;
+          box-shadow: 2px 2px 4px #9F9F9F;
+  border-radius: 10px;
 }
 
 .center {
@@ -431,10 +464,14 @@ body {
   width: 100px;
   height: 49px;
   border-radius: 0 25px 25px 0;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .sb-btn:hover {
   background-color: #E05C6E;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*подвал страницы*/
@@ -489,6 +526,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 16px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .icons_link:hover {
@@ -772,14 +811,22 @@ body {
           justify-content: space-between;
   -webkit-column-gap: 23px;
           column-gap: 23px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .but_prod svg {
   fill: #F26376;
 }
 
+.but_prod:hover span {
+  visibility: hidden;
+}
+
 .but_prod:hover svg {
   fill: #fff;
+  -webkit-animation: cart 2s infinite normal;
+          animation: cart 2s infinite normal;
 }
 
 .wrap-ctrl {
@@ -802,9 +849,39 @@ body {
   border: none;
   background-color: transparent;
   color: #6F6E6E;
+  cursor: pointer;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.wrap-ctrl button:hover i {
+  -webkit-transform: rotate(90deg) translateX(-9px) scale(1.5);
+          transform: rotate(90deg) translateX(-9px) scale(1.5);
 }
 
 .wrap-ctrl i {
   padding-left: 9px;
+}
+
+@-webkit-keyframes cart {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(120px);
+            transform: translate(120px);
+  }
+}
+
+@keyframes cart {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  100% {
+    -webkit-transform: translate(120px);
+            transform: translate(120px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
