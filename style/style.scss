@@ -626,11 +626,19 @@ body {
 }
 
 .but_prod {
-    padding: 15px 57px 15px 73px;
-    background-image: url("../img/cart.svg");
-    background-repeat: no-repeat;
-    background-position-x: 25px;
-    background-position-y: center;
+    padding: 15px 57px 15px 23px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 23px;
+
+    svg {
+        fill: #F26376;
+    }
+
+    &:hover svg {
+        fill: #fff;
+    }
 }
 
 .wrap-ctrl {
