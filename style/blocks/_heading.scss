@@ -33,9 +33,18 @@
 
     svg {
         fill: #E8E8E8;
+        transition: all 0.4s ease;
     }
 
     svg:hover {
         fill: $color_accent;
+    }
+}
+
+.logo {
+    transition: all 400ms ease;
+
+    &:hover {
+        transform: rotate(360deg) scale(1.2);
     }
 }
