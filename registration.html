@@ -12,7 +12,7 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/4c74d4fdd7.js" crossorigin="anonymous"></script>
-    <title>Cart</title>
+    <title>Reistration</title>
 </head>
 
 <body>
@@ -52,54 +52,44 @@
     </header>
     <section class="caption">
         <div class="wrap caption-wrap">
-            <h1 class="caption-head">SHOPPING CART</h1>
+            <h1 class="caption-head">REGISTRATION</h1>
+
         </div>
     </section>
     <main class="content">
-        <div class="wrap wrap-cart">
-            <section class="products_edit">
-                <div class="pr-element">
-                    <img src="img/product3.jpg">
-                    <div class="pr-element-text">
+        <div class="wrap wrap-reg">
+            <form action="#" class="reg-form">
+                <label for="FirstName">Your Name</label>
+                <input type="text" name="FirstName" placeholder="First Name">
+                <input type="text" name="LastName" placeholder="Last Name">
+                <div class="wrap-row">
+                    <input type="radio" name="Male"><label class="sex" for="Male">Male</label>
+                    <input type="radio" name="Female"><label class="sex" for="Female">Female</label>
+                </div>
+                <label for="Email">Login Details</label>
+                <input type="email" name="Email" placeholder="Email">
+                <input type="password" name="Password" placeholder="Password">
+                <label class="password" for="Password">Please use 8 or more characters, with at least 1 number and a
+                    mixture of uppercase
+                    and lowercase letters</label>
+                <button type="submit" class="btn-cart reg-btn">JOIN NOW<i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <section class="reg-descript">
+                <h2>LOYALTY HAS ITS PERKS</h2>
+                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these
+                    as soon as you join:</p>
+                <ul class="reg-descript-list">
+                    <li>15% off welcome offer
+                    </li>
+                    <li>Free shipping, returns and exchanges on all orders
 
-                        <h3>MANGO PEOPLE T-SHIRT</h3>
-                        <p>Price: <span class="red">$300</span></p>
-                        <p>Color: <span class="grey">Red</span></p>
-                        <p>Size: <span class="grey">Xl</span> </p>
-                        <p>Quantity:<span class="blok">2</span></p>
-                    </div>
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="pr-element">
-                    <img src="img/product7.jpg">
-                    <div class="pr-element-text">
+                    </li>
+                    <li>$10 off a purchase on your birthday
 
-                        <h3>MANGO PEOPLE T-SHIRT</h3>
-                        <p>Price: <span class="red">$300</span></p>
-                        <p>Color: Red</p>
-                        <p>Size: Xl </p>
-                        <p>Quantity:<span class="blok">2</span></p>
-                    </div>
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-                <div class="pr-ctrl">
-                    <button class="btn-cart">CLEAR SHOPPING CART</button>
-                    <button class="btn-cart">CONTINUE SHOPPING</button>
-                </div>
-            </section>
-            <section class="order">
-                <form class="adres" action="#">
-                    <h2>SHIPPING ADRESS</h2>
-                    <input type="text" placeholder="Bangladesh">
-                    <input type="text" placeholder="State">
-                    <input type="text" placeholder="Postcode / Zip">
-                    <button class="btn-cart adres-btn">GET A QUOTE</button>
-                </form>
-                <article class="count">
-                    <p class="left sub">SUB TOTAL <span>$900</span></p>
-                    <p class="left grand">GRAND TOTAL <span class="red">$900</span></p>
-                    <button class="btn-cart count-btn">PROCEED TO CHECKOUT</button>
-                </article>
+                    </li>
+                    <li>Early access to products</li>
+                    <li>Exclusive offers & rewards</li>
+                </ul>
             </section>
         </div>
     </main>
