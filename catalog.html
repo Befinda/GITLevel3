@@ -66,17 +66,67 @@
         <div class="wrap">
             <section class="products-cat">
                 <div class="prod-filter">
-                    <div class="prod-filter-item filter"> <button><span>FILTER</span>
-                            <svg width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
-                            </svg>
-                        </button>
+                    <div class="prod-filter-item">
+                        <details class="filter">
+                            <summary class="filter-main"><span>FILTER</span>
+                                <svg width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                                </svg>
+                            </summary>
+                            <div class="filter-overlay">
+                                <details open class="filter-item">
+                                    <summary class="filter-name">CATEGORY</summary>
+                                    <ul class="filter-list">
+                                        <li><button type="button" class="filter-list-btn">Accesories</button></li>
+                                        <li><button type="button" class="filter-list-btn">Bags</button></li>
+                                        <li><button type="button" class="filter-list-btn">Denim</button></li>
+                                        <li><button type="button" class="filter-list-btn">Hoodies & Sweatshirts</button>
+                                        </li>
+                                        <li><button type="button" class="filter-list-btn">Jackets & Coats</button></li>
+                                        <li><button type="button" class="filter-list-btn">Polos</button></li>
+                                        <li><button type="button" class="filter-list-btn">Shirts</button></li>
+                                        <li><button type="button" class="filter-list-btn">Shoes</button></li>
+                                        <li><button type="button" class="filter-list-btn">Sweaters & Knits</button></li>
+                                        <li><button type="button" class="filter-list-btn">T-Shirts</button></li>
+                                        <li><button type="button" class="filter-list-btn">Tanks</button></li>
+                                    </ul>
+                                </details>
+                                <details class="filter-item">
+                                    <summary class="filter-name">BRAND</summary>
+                                </details>
+                                <details class="filter-item">
+                                    <summary class="filter-name">DESIGNER</summary>
+                                </details>
+                            </div>
+                        </details>
                     </div>
                     <div class="prod-filter-item sort">
-                        <button>TRENDING NOW<i class="fa-solid fa-angle-down"></i></button>
-                        <button>SIZE<i class="fa-solid fa-angle-down"></i></button>
-                        <button>PRICE<i class="fa-solid fa-angle-down"></i></button>
+                        <details class="sort-item">
+                            <summary class="sort-name">TRENDING NOW<i class="fa-solid fa-angle-down"></i></summary>
+                            <ul class="sort-list">
+                                <li><input type="checkbox"><label for="#">Trend1</label></li>
+                                <li><input type="checkbox"><label for="#">Trend2</label></li>
+                                <li><input type="checkbox"><label for="#">Trend3</label></li>
+                                <li><input type="checkbox"><label for="#">Trend4</label></li>
+                            </ul>
+                        </details>
+                        <details class="sort-item">
+                            <summary class="sort-name">SIZE<i class="fa-solid fa-angle-down"></i></summary>
+                            <ul class="sort-list">
+                                <li><input type="checkbox"><label for="#">XS</label></li>
+                                <li><input type="checkbox"><label for="#">S</label></li>
+                                <li><input type="checkbox"><label for="#">M</label></li>
+                                <li><input type="checkbox"><label for="#">L</label></li>
+                        </details>
+                        <details class="sort-item">
+                            <summary class="sort-name">PRICE<i class="fa-solid fa-angle-down"></i></summary>
+                            <ul class="sort-list">
+                                <li><input type="checkbox"><label for="#">100</label></li>
+                                <li><input type="checkbox"><label for="#">500</label></li>
+                                <li><input type="checkbox"><label for="#">1000</label></li>
+                                <li><input type="checkbox"><label for="#">2000</label></li>
+                        </details>
 
                     </div>
                 </div>
