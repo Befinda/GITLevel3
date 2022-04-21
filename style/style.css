@@ -42,6 +42,7 @@ body {
   background-color: #222;
   color: white;
   padding: 19px 0;
+  height: 75px;
 }
 
 .header-wrap {
@@ -104,6 +105,77 @@ body {
 .logo:hover {
   -webkit-transform: rotate(360deg) scale(1.2);
           transform: rotate(360deg) scale(1.2);
+}
+
+.main-nav {
+  width: 232px;
+  height: 764px;
+  padding: 37px 34px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  color: #000;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.main-nav-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.main-nav-list {
+  list-style-type: none;
+}
+
+.main-nav-item {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.main-nav-link {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 12px;
+  color: #F16D7F;
+}
+
+.main-nav-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  border: none;
+  background-color: transparent;
+  font-weight: 900;
+}
+
+.submenu-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 11px;
+}
+
+.submenu-item {
+  padding-left: 22px;
+}
+
+.submenu-link {
+  display: block;
+  text-decoration: none;
+  color: #6F6E6E;
+}
+
+.main-nav--close {
+  display: none;
 }
 
 /*обложка*/
