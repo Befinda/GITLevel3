@@ -833,7 +833,11 @@ body {
   max-width: max-content;
 }
 
-.sort-list li input[type="checkbox"] {
+.sort-list li {
+  text-align: left;
+}
+
+.sort-list li input {
   border: 1px solid #EBEBEB;
   margin-right: 9px;
 }

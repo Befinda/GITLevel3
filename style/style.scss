@@ -531,7 +531,9 @@ body {
 
 
         li {
-            input[type="checkbox"] {
+            text-align: left;
+
+            input {
                 border: 1px solid #EBEBEB;
                 margin-right: 9px;
             }
