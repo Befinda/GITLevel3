@@ -285,8 +285,8 @@ body {
 }
 
 .offer_item {
-  max-width: 360px;
-  max-height: 260px;
+  width: 360px;
+  height: 260px;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
@@ -460,6 +460,7 @@ body {
 }
 
 .feature_item {
+  width: 360px;
   padding-top: 65px;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -1473,6 +1474,51 @@ body {
     row-gap: 20px;
     -webkit-column-gap: 20px;
             column-gap: 20px;
+  }
+  .offer_item {
+    width: 232px;
+    height: 168px;
+    padding: 59px 0;
+    background-size: cover;
+  }
+  .offer .acc {
+    padding: 33px 0;
+    height: 116px;
+  }
+  .products_catalog {
+    row-gap: 16px;
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
+  }
+  .center {
+    margin: 32px 0 48px;
+  }
+  .feature {
+    padding: 48px 0 64px;
+  }
+  .feature-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 48px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe {
+    height: 614px;
+  }
+  .subscribe-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 64px 0 140px;
+    row-gap: 48px;
   }
 }
 /*# sourceMappingURL=style.css.map */
