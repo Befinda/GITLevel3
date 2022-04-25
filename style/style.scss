@@ -47,8 +47,8 @@ body {
     row-gap: 30px;
 
     &_item {
-        width: 360px;
-        height: 260px;
+        max-width: 360px;
+        max-height: 260px;
         text-decoration: none;
         font-weight: 400;
         font-size: $size_text+2px;
@@ -119,6 +119,7 @@ body {
     width: 360px;
     /*height: 581px;*/
     background-color: #F8F8F8;
+
 }
 
 .item {
@@ -387,18 +388,34 @@ body {
 }
 
 .filter {
-    padding-left: 16px;
 
-    button {
+    position: relative;
+    width: 360px;
+
+    &[open] {
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] &-main {
+        color: #EF5B70;
+        fill: #EF5B70;
+    }
+
+    &-main {
+        &::-webkit-details-marker {
+            display: none;
+        }
+
         border: none;
-        background-color: transparent;
+        background-color: #fff;
         font-weight: 600;
         font-size: $size_text;
         color: #000000;
         cursor: pointer;
-        display: flex;
-        align-items: center;
-
+        display: block;
+        padding: 13px 0 13px 16px;
+        position: relative;
+        z-index: 11;
         transition: all 400ms ease;
 
         &:hover {
@@ -414,7 +431,57 @@ body {
             transition: all 400ms ease;
         }
     }
+
+    &-overlay {
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        width: 100%;
+        padding: 16px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &-item[open] &-name {
+        color: #EF5B70;
+    }
+
+    &-item {
+        margin-bottom: 18px;
+    }
+
+    &-name {
+        display: block;
+        padding: 11px;
+        border-left: 5px solid #EF5B70;
+        border-bottom: 1px solid #EBEBEB;
+        text-transform: uppercase;
+        color: #6F6E6E;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+
+    &-list {
+        padding-left: 0;
+        list-style-type: none;
+
+        li {
+            padding: 11px;
+            margin-left: 5px;
+        }
+
+        &-btn {
+            border: none;
+            background-color: transparent;
+            color: #6F6E6E;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
 }
+
+
 
 .sort {
     font-weight: 400;
@@ -425,15 +492,56 @@ body {
     column-gap: 28px;
     color: #6F6E6E;
 
-    button {
+    &-item {
+        position: relative;
+
+        &[open] i {
+            transform: rotate(90deg) translateX(-9px) scale(1.5);
+        }
+    }
+
+    &-name {
         border: none;
         background-color: transparent;
         color: #6F6E6E;
         cursor: pointer;
         transition: all 400ms ease;
+        display: block;
+        position: relative;
+
 
         &:hover i {
             transform: rotate(90deg) translateX(-9px) scale(1.5);
+        }
+    }
+
+    &-list {
+        position: absolute;
+        background: #fff;
+        list-style-type: none;
+        padding: 9px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 9px;
+        right: 0;
+        top: 22px;
+        min-width: 80px;
+        max-width: max-content;
+
+
+        li {
+            text-align: left;
+
+            input {
+                border: 1px solid #EBEBEB;
+                margin-right: 9px;
+            }
+
+            label {
+                text-transform: uppercase;
+            }
         }
     }
 
@@ -810,8 +918,7 @@ body {
             border: none;
         }
     }
-<<<<<<< HEAD
-=======
+
 }
 
 /*Регистрация*/
@@ -902,5 +1009,34 @@ body {
             }
         }
     }
->>>>>>> homework6
+
+}
+
+/*tablet*/
+@media (max-width: 1200px) {
+    .wrap {
+        width: 736px;
+    }
+
+    .promo-wrap {
+        height: 368px;
+        background-position-x: 0;
+        background-size: contain;
+    }
+
+    .promo-title {
+        font-size: 24px;
+        margin-right: 0;
+
+        .big {
+            font-size: 44px;
+        }
+    }
+
+    .offer {
+        padding-top: 20px;
+        padding-bottom: 155px;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
 }

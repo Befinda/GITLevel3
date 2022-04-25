@@ -2,6 +2,8 @@
     background-color: #222;
     color: white;
     padding: 19px 0;
+    height: 75px;
+
 
     &-wrap {
         display: flex;
@@ -47,4 +49,71 @@
     &:hover {
         transform: rotate(360deg) scale(1.2);
     }
+}
+
+.main-nav {
+    width: 232px;
+    height: 764px;
+    padding: 37px 34px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    color: #000;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+    &-title {
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    &-list {
+        list-style-type: none;
+    }
+
+    &-item {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    &-link {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 12px;
+        color: $color_accent;
+    }
+
+    &-close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        border: none;
+        background-color: transparent;
+        font-weight: 900;
+    }
+}
+
+.submenu {
+    &-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 11px;
+    }
+
+    &-item {
+        padding-left: 22px;
+    }
+
+    &-link {
+        display: block;
+        text-decoration: none;
+        color: #6F6E6E;
+    }
+}
+
+.main-nav--close {
+    display: none;
 }
