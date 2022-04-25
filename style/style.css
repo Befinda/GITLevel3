@@ -285,8 +285,8 @@ body {
 }
 
 .offer_item {
-  width: 360px;
-  height: 260px;
+  max-width: 360px;
+  max-height: 260px;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
@@ -768,7 +768,6 @@ body {
   z-index: 11;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
-
 }
 
 .filter-main::-webkit-details-marker {
@@ -783,9 +782,7 @@ body {
   fill: #EF5B70;
 }
 
-
 .filter-main svg {
-
   margin-left: 11px;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
@@ -854,7 +851,6 @@ body {
           align-items: center;
   -webkit-column-gap: 28px;
           column-gap: 28px;
-
   color: #6F6E6E;
 }
 
@@ -870,16 +866,15 @@ body {
 .sort-name {
   border: none;
   background-color: transparent;
-
   color: #6F6E6E;
   cursor: pointer;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
+  display: block;
+  position: relative;
 }
 
 .sort-name:hover i {
-
-
   -webkit-transform: rotate(90deg) translateX(-9px) scale(1.5);
           transform: rotate(90deg) translateX(-9px) scale(1.5);
 }
@@ -1455,3 +1450,29 @@ body {
   padding-left: 42px;
 }
 
+/*tablet*/
+@media (max-width: 1200px) {
+  .wrap {
+    width: 736px;
+  }
+  .promo-wrap {
+    height: 368px;
+    background-position-x: 0;
+    background-size: contain;
+  }
+  .promo-title {
+    font-size: 24px;
+    margin-right: 0;
+  }
+  .promo-title .big {
+    font-size: 44px;
+  }
+  .offer {
+    padding-top: 20px;
+    padding-bottom: 155px;
+    row-gap: 20px;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

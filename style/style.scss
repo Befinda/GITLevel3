@@ -47,8 +47,8 @@ body {
     row-gap: 30px;
 
     &_item {
-        width: 360px;
-        height: 260px;
+        max-width: 360px;
+        max-height: 260px;
         text-decoration: none;
         font-weight: 400;
         font-size: $size_text+2px;
@@ -918,8 +918,7 @@ body {
             border: none;
         }
     }
-<<<<<<< HEAD
-=======
+
 }
 
 /*Регистрация*/
@@ -1010,5 +1009,34 @@ body {
             }
         }
     }
->>>>>>> homework6
+
+}
+
+/*tablet*/
+@media (max-width: 1200px) {
+    .wrap {
+        width: 736px;
+    }
+
+    .promo-wrap {
+        height: 368px;
+        background-position-x: 0;
+        background-size: contain;
+    }
+
+    .promo-title {
+        font-size: 24px;
+        margin-right: 0;
+
+        .big {
+            font-size: 44px;
+        }
+    }
+
+    .offer {
+        padding-top: 20px;
+        padding-bottom: 155px;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
 }
