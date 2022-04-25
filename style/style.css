@@ -768,6 +768,7 @@ body {
   z-index: 11;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
+
 }
 
 .filter-main::-webkit-details-marker {
@@ -782,7 +783,9 @@ body {
   fill: #EF5B70;
 }
 
+
 .filter-main svg {
+
   margin-left: 11px;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
@@ -851,6 +854,7 @@ body {
           align-items: center;
   -webkit-column-gap: 28px;
           column-gap: 28px;
+
   color: #6F6E6E;
 }
 
@@ -866,15 +870,16 @@ body {
 .sort-name {
   border: none;
   background-color: transparent;
+
   color: #6F6E6E;
   cursor: pointer;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
-  display: block;
-  position: relative;
 }
 
 .sort-name:hover i {
+
+
   -webkit-transform: rotate(90deg) translateX(-9px) scale(1.5);
           transform: rotate(90deg) translateX(-9px) scale(1.5);
 }
@@ -1449,4 +1454,4 @@ body {
   list-style-type: none;
   padding-left: 42px;
 }
-/*# sourceMappingURL=style.css.map */
+
