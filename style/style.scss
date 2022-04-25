@@ -385,9 +385,7 @@ body {
     padding-bottom: 64px;
 }
 
-.prod-filter-item {
-    width: 360px;
-}
+
 
 .filter {
 
@@ -429,6 +427,8 @@ body {
         }
 
         svg {
+            width: 15px;
+            height: 10px;
             margin-left: 11px;
             transition: all 400ms ease;
         }
@@ -1169,5 +1169,50 @@ body {
 
     .icons {
         margin-bottom: 40px;
+    }
+
+    .caption-wrap {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 32px;
+        padding: 24px 0 46px;
+    }
+
+    .novis-mob {
+        display: none;
+    }
+
+    .filter {
+        width: 38px;
+    }
+
+    .filter[open] {
+        width: 360px;
+        position: absolute;
+    }
+
+    .filter-main {
+        padding: 0;
+
+        svg {
+            /*width="15" height="10"*/
+            width: 37.5px;
+            height: 25px;
+        }
+    }
+
+
+    .sort {
+        width: 300px;
+        column-gap: 24px;
+    }
+
+    .products-cat {
+        margin-top: 24px;
+    }
+
+    .prod-filter {
+
+        padding-bottom: 32px;
     }
 }
