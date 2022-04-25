@@ -1523,6 +1523,9 @@ body {
   .sb-input {
     width: 243px;
   }
+  .novis {
+    display: none;
+  }
 }
 
 /*mobile*/
