@@ -47,8 +47,8 @@ body {
     row-gap: 30px;
 
     &_item {
-        max-width: 360px;
-        max-height: 260px;
+        width: 360px;
+        height: 260px;
         text-decoration: none;
         font-weight: 400;
         font-size: $size_text+2px;
@@ -188,6 +188,7 @@ body {
 
 /*достижения*/
 .feature {
+
     background-color: #222224;
     padding: 103px 0;
     text-align: center;
@@ -204,6 +205,7 @@ body {
     }
 
     &_item {
+        width: 360px;
         padding-top: 65px;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -383,9 +385,7 @@ body {
     padding-bottom: 64px;
 }
 
-.prod-filter-item {
-    width: 360px;
-}
+
 
 .filter {
 
@@ -427,6 +427,8 @@ body {
         }
 
         svg {
+            width: 15px;
+            height: 10px;
             margin-left: 11px;
             transition: all 400ms ease;
         }
@@ -1038,5 +1040,179 @@ body {
         padding-bottom: 155px;
         row-gap: 20px;
         column-gap: 20px;
+
+        &_item {
+            width: 232px;
+            height: 168px;
+            padding: 59px 0;
+            background-size: cover;
+        }
+
+        .acc {
+            padding: 33px 0;
+            height: 116px;
+        }
+    }
+
+    .products_catalog {
+        row-gap: 16px;
+        column-gap: 16px;
+    }
+
+    .center {
+        margin: 32px 0 48px;
+    }
+
+    .feature {
+        padding: 48px 0 64px;
+
+        &-wrap {
+            flex-direction: column;
+            row-gap: 48px;
+            align-items: center;
+        }
+    }
+
+    .subscribe {
+        height: 614px;
+    }
+
+    .subscribe-wrap {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 64px 0 140px;
+        row-gap: 48px;
+    }
+
+    .sb-input {
+        width: 243px;
+    }
+
+    .novis {
+        display: none;
+    }
+}
+
+/*mobile*/
+@media(max-width:760px) {
+    .wrap {
+        width: 360px;
+    }
+
+    .people,
+    .cart {
+        display: none;
+    }
+
+    .promo {
+        &-wrap {
+            background-image: none;
+        }
+
+        &-title {
+            float: none;
+            margin: 0 auto;
+            font-size: 20px;
+
+
+            .big {
+                font-size: 38px;
+            }
+        }
+    }
+
+    .offer {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        row-gap: 32px;
+        flex-direction: column;
+        align-items: center;
+
+        &_item {
+            height: 247px;
+            width: 343px;
+            padding: 98px 0;
+        }
+
+        .acc {
+            width: 343px;
+        }
+    }
+
+    .center {
+        margin: 40px 0 96px;
+    }
+
+    .subscribe {
+        height: 614px;
+
+        &_avatar,
+        form {
+            width: 343px;
+        }
+    }
+
+    .subscribe-wrap {
+
+
+        padding-bottom: 110px;
+        row-gap: 60px;
+    }
+
+    .footer-wrap {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 43px;
+    }
+
+    .icons {
+        margin-bottom: 40px;
+    }
+
+    .caption-wrap {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 32px;
+        padding: 24px 0 46px;
+    }
+
+    .novis-mob {
+        display: none;
+    }
+
+    .filter {
+        width: 38px;
+    }
+
+    .filter[open] {
+        width: 360px;
+        position: absolute;
+    }
+
+    .filter-main {
+        padding: 0;
+
+        svg {
+            /*width="15" height="10"*/
+            width: 37.5px;
+            height: 25px;
+        }
+    }
+
+
+    .sort {
+        width: 300px;
+        column-gap: 24px;
+    }
+
+    .products-cat {
+        margin-top: 24px;
+    }
+
+    .prod-filter {
+
+        padding-bottom: 32px;
     }
 }
