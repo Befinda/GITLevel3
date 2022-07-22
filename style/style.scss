@@ -37,6 +37,9 @@ body {
 /*обложка*/
 @import 'blocks/promo';
 
+/*подвал страницы*/
+@import "blocks/footer";
+
 /*категории товаров*/
 .offer {
     padding: 65px 0 96px;
@@ -311,8 +314,7 @@ body {
     }
 }
 
-/*подвал страницы*/
-@import "blocks/footer";
+
 
 
 /*стили страницы каталог*/
