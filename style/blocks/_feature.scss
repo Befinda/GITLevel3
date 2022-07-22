@@ -1,0 +1,45 @@
+/*достижения*/
+.feature {
+
+    background-color: #222224;
+    padding: 103px 0;
+    text-align: center;
+    color: #FBFBFB;
+    font-weight: 300;
+    font-size: $size_text;
+    line-height: $size_text+3px;
+
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 90px;
+    }
+
+    &_item {
+        width: 360px;
+        padding-top: 65px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+
+    }
+
+    &-head {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .item_deliv {
+        background-image: url("../img/feature1.svg");
+    }
+
+    .item_sales {
+        background-image: url("../img/feature2.svg");
+    }
+
+    .item_qual {
+        background-image: url("../img/feature3.svg");
+    }
+}

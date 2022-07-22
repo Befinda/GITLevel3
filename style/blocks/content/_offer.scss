@@ -1,0 +1,53 @@
+/*категории товаров*/
+.offer {
+    padding: 65px 0 96px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+
+    &_item {
+        width: 360px;
+        height: 260px;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: $size_text+2px;
+        line-height: $size_text+5px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 105px 0;
+        background-color: #5D5D5D;
+        transition: font-size 400ms ease;
+
+        &:hover span {
+            font-size: 44px;
+        }
+    }
+
+    .women {
+        background-image: url("../img/for_women.jpg");
+    }
+
+    .men {
+        background-image: url("../img/for_men.jpg");
+    }
+
+    .kids {
+        background-image: url("../img/for_kids.jpg");
+    }
+
+    .acc {
+        background-image: url("../img/accesoires.jpg");
+        width: 100%;
+        height: 180px;
+        padding: 65px 0;
+    }
+
+    &_red {
+        color: $color_accent;
+        font-size: 24px;
+        line-height: 28.8px;
+        font-weight: 700;
+    }
+}

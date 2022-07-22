@@ -1,0 +1,56 @@
+/*стили страницы каталог*/
+.caption {
+    background-color: #F8F3F4;
+    &-wrap {
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-head {
+        color: $color_accent;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+//стили "хлебных крошек"
+.bdc-item::before {
+    content: '/';
+    margin-right: 10px;
+}
+
+.bdc-item:first-child::before {
+    display: none;
+}
+
+.bdc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+
+.bdc-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: $size_text;
+    line-height: $size_text+3px;
+    color: #636363;
+    transition: all 0.4s ease;
+
+}
+
+.bdc-link--current {
+    font-weight: bold;
+    color: $color_accent;
+    cursor: default;
+}
+
+.bdc-link[href]:hover {
+    text-decoration: underline;
+    color: $color_accent;
+}
