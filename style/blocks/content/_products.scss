@@ -1,19 +1,21 @@
-.products{
-    &_title{
+.products {
+    &_title {
         text-align: center;
+
         &_head {
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 10px;
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 10px;
         }
-    
+
         &_desc {
-        font-size: $size_text;
-        line-height: $size_text+3px;
-        color: #9F9F9F;
-        margin-bottom: 48px;
+            font-size: $size_text;
+            line-height: $size_text+3px;
+            color: #9F9F9F;
+            margin-bottom: 48px;
         }
     }
+
     &_catalog {
         display: flex;
         flex-wrap: wrap;
@@ -21,10 +23,13 @@
         column-gap: 30px;
         row-gap: 30px;
     }
+
     /*элемент-продукт*/
     &_item {
         width: 360px;
         background-color: #F8F8F8;
+        position: relative;
+
         .item {
             &_text-wrap {
                 padding: 25px 18px 20px;
@@ -33,43 +38,64 @@
                 row-gap: 15px;
                 justify-content: space-between;
             }
-        
+
             &_head {
                 font-size: 13px;
                 line-height: 16px;
                 transition: all 400ms ease;
-        
+
                 a {
                     text-decoration: none;
                     color: #000;
                 }
-        
+
                 &:hover a {
                     color: $color_accent;
                     text-shadow: 3px 5px 4px #9f9f9f;
                 }
-        
+
             }
-        
+
             &_des {
                 font-weight: 300;
                 font-size: $size_text;
                 line-height: $size_text+3px;
                 color: #5D5D5D;
             }
-        
+
             &_price {
                 font-size: $size_text+2px;
                 line-height: $size_text+5px;
                 color: $color_accent;
             }
         }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 420px;
+            background-color: rgba(58, 56, 56, 0.83);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        &:hover .overlay {
+            opacity: 1;
+        }
     }
 }
+
 .wrap-cat {
     margin-top: 51px;
     margin-bottom: 96px;
 }
+
 .wrap-prod {
     margin: 128px 0;
 }

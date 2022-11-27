@@ -1,4 +1,4 @@
-$color_accent:#F16D7F;
+$color_accent: #F16D7F;
 $size_text: 14px;
 
 * {
@@ -571,6 +571,20 @@ body {
     font-size: 14px;
     padding: 16px 40px;
     cursor: pointer;
+}
+
+.over {
+    padding: 8px 12px;
+    border-color: #fff;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+
+    svg {
+        fill: #fff;
+    }
 }
 
 .order {

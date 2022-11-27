@@ -495,6 +495,7 @@ body {
 .products_item {
   width: 360px;
   background-color: #F8F8F8;
+  position: relative;
 }
 .products_item .item_text-wrap {
   padding: 25px 18px 20px;
@@ -526,6 +527,22 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
+}
+.products_item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 420px;
+  background-color: rgba(58, 56, 56, 0.83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.products_item:hover .overlay {
+  opacity: 1;
 }
 
 .wrap-cat {
@@ -964,6 +981,20 @@ body {
   font-size: 14px;
   padding: 16px 40px;
   cursor: pointer;
+}
+
+.over {
+  padding: 8px 12px;
+  border-color: #fff;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.over svg {
+  fill: #fff;
 }
 
 .order {
