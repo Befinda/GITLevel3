@@ -29,3 +29,14 @@ function getProductMarkup(product) {
 }
 
 insertProductsIntoPage(products, productsCatalogEl);
+
+function addedProductHandler(e) {
+    const productID = e.currentTarget.getAttribute('data-productID');
+    addProductIntoBasket(productID);
+}
+
+document.querySelectorAll('button[data-productID]')
+    .forEach((button) => {
+        button.addEventListener('click', addedProductHandler)
+    });
+

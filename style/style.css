@@ -45,6 +45,7 @@ body {
   align-items: center;
   -moz-column-gap: 32px;
        column-gap: 32px;
+  position: relative;
 }
 .header-left {
   display: flex;
@@ -55,6 +56,9 @@ body {
 .header-link {
   text-decoration: none;
   color: transparent;
+}
+.header-link span {
+  color: #fff;
 }
 .header-btn {
   background-color: transparent;
@@ -67,6 +71,35 @@ body {
 }
 .header svg:hover {
   fill: #F16D7F;
+}
+
+.basket {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 400px;
+  background-color: #fff;
+  color: #000;
+  z-index: 12;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.basketRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 10px;
+}
+.basketHeader {
+  font-weight: bold;
+}
+.basketTotal {
+  font-weight: bold;
+  text-align: right;
 }
 
 .logo {
